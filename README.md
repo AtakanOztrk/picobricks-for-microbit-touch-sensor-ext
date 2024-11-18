@@ -1,24 +1,38 @@
+# Picobricks for Micro:Bit Touch Sensor
 
-> Open this page at [https://atakanoztrk.github.io/picobricks-for-microbit-touch-sensor-ext/](https://atakanoztrk.github.io/picobricks-for-microbit-touch-sensor-ext/)
+Picobricks for Micro:Bit teaches kids and adults coding, electronics basics and advanced technology while providing a fun and fascinating experience filled with project. 
+[Click Here to Explore PicoBricks for micro:bit Kits](https://picobricks.com/collections/micro-bit-kits)
 
-## Use as Extension
+## Block
 
-This repository can be added as an **extension** in MakeCode.
+* Piano And Gaming Brick : This touchpad module is designed to offer makers an interactive and ecciting world.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/atakanoztrk/picobricks-for-microbit-touch-sensor-ext** and import
+## Examples
 
-## Edit this project
+* Piano And Gaming Brick : This brick designed of offer makers an interactive and exciting world. Let's play piano.
 
-To edit this repository in MakeCode.
+```blocks
+picobricks.touchInit()
+basic.forever(function () {
+    picobricks.playPiano(PicoBricksVolumeStatus.Passive, PicoBricksToneStatus.Passive)
+})
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/atakanoztrk/picobricks-for-microbit-touch-sensor-ext** and click import
+## Education Material and Tutorials
 
-#### Metadata (used for search, rendering)
+[PicoBricks for Micro:Bit MakeCode Project Book](https://rbt.ist/makecodeprojectbook)
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+## Meta
+
+Questions? [Email us](mailto:support@picobricks.com)
+
+Keywords: picobricks, microbit
+
+## License
+
+This software made available under the MIT open source license.
+
+## Supported targets
+
+* for microbit v1 and microbit v2

@@ -1,1 +1,5 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+//play piano
+picobricks.touchInit()
+basic.forever(function () {
+    picobricks.playPiano(PicoBricksVolumeStatus.Passive, PicoBricksToneStatus.Passive)
+})
